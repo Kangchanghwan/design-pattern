@@ -13,7 +13,7 @@ class TemplateTest {
   @DisplayName("템플릿 메서드 패턴")
   void template(){
 
-    Template<String> template = new Template<String>() {
+    Template<String> template = new Template<>() {
       @Override
       String template() {
         System.out.println("본문입니다.");
