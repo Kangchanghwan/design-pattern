@@ -27,3 +27,41 @@ public abstract class  Template<T> {
 - ### 전략패턴
 
 # 2. 전략패턴
+
+![img.png](img.png)
+
+
+## 사용
+```java
+public void test () {
+
+  //Strategy를 구현한 익명 클래스
+  Strategy strategy = () -> System.out.println("실행 될 함수");
+
+  ContextV1 contextV1 = new ContextV1(strategy);
+
+  contextV1.execute();
+
+}
+```
+## 부연
+- ### 선조립, 후실행 -> 문맥과 실행될 코드가 조합이 되고 나서 실행되는 부분.
+## 장점
+- ### 템플릿 메서드 패턴과 달리 상속없이 인터페이스로 구현하여 `상속으로 인한 단점이 없다`.
+## 단점
+- ### context 와 strategy를 조립한 이후에는`전략을 변경하기가 번거롭다.`
+- ### 위같은 단점을 아래같은 코드로 변경한다면 전략변경에 어느정도 용이하다.
+```java
+
+// 실행할 함수를 parameter로 받는다.
+public class ContextV2 {
+
+  public void execute(Strategy strategy){
+    System.out.println("실행전===========");
+    strategy.call();
+    System.out.println("실행후===========");
+  }
+
+}
+```
+
