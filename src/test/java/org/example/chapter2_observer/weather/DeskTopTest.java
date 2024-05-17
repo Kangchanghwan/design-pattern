@@ -1,8 +1,9 @@
 package org.example.chapter2_observer.weather;
 
+import org.example.chapter2_observer.weather.concreteObserver.DashBoard;
+import org.example.chapter2_observer.weather.concreteObserver.DeskTop;
+import org.example.chapter2_observer.weather.concreteSubject.WeatherData;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class DeskTopTest {
 

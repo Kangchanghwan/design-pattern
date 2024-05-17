@@ -1,6 +1,10 @@
 package org.example.chapter1_strategy.duck;
 
 
+import org.example.chapter1_strategy.duck.concretestrategy.BeepBeepQuack;
+import org.example.chapter1_strategy.duck.context.Duck;
+import org.example.chapter1_strategy.duck.context.EastAngleDuck;
+import org.example.chapter1_strategy.duck.concretestrategy.RightAngleFly;
 import org.junit.jupiter.api.Test;
 
 class DuckTest {

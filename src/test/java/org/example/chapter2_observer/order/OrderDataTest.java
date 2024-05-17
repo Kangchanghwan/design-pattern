@@ -1,8 +1,9 @@
 package org.example.chapter2_observer.order;
 
+import org.example.chapter2_observer.order.concreteObserver.HallScreen;
+import org.example.chapter2_observer.order.concreteObserver.KitchenScreen;
+import org.example.chapter2_observer.order.concreteSubject.OrderData;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class OrderDataTest {
 

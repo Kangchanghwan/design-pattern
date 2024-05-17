@@ -1,5 +1,7 @@
 package org.example.chapter4_factory.pizza;
 
+import org.example.chapter4_factory.pizza.creator.NYPizzaIngredientFactory;
+
 import java.util.List;
 
 public class NYStyleCheesePizza extends Pizza{

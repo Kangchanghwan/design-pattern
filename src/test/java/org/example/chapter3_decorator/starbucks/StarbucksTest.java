@@ -1,6 +1,13 @@
 package org.example.chapter3_decorator.starbucks;
 
 
+import org.example.chapter3_decorator.starbucks.component.Beverage;
+import org.example.chapter3_decorator.starbucks.concreteComponent.DarkRost;
+import org.example.chapter3_decorator.starbucks.concreteComponent.Espresso;
+import org.example.chapter3_decorator.starbucks.concreteComponent.HouseBlend;
+import org.example.chapter3_decorator.starbucks.concreteDecorator.Mocha;
+import org.example.chapter3_decorator.starbucks.concreteDecorator.Soy;
+import org.example.chapter3_decorator.starbucks.concreteDecorator.Whip;
 import org.junit.jupiter.api.Test;
 
 class StarbucksTest {

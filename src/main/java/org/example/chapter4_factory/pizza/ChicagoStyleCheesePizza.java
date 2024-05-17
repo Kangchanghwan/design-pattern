@@ -1,5 +1,7 @@
 package org.example.chapter4_factory.pizza;
 
+import org.example.chapter4_factory.pizza.creator.NYPizzaIngredientFactory;
+
 import java.util.List;
 
 public class ChicagoStyleCheesePizza extends Pizza{
@@ -10,7 +12,7 @@ public class ChicagoStyleCheesePizza extends Pizza{
         sauce = factory.createSauce();
         toppings.addAll(List.of(factory.createCheese(), factory.createPepperoni()));
     }
-    void cut() {
+    public void cut() {
         System.out.println("Cutting the pizza into diagonal slices");
     }
 }
